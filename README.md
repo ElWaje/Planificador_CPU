@@ -1,4 +1,6 @@
-![Presentación](ejemplo_gantt.png)
+![Presentación](header_cpu_timeline.png)
+
+(ejemplo_gantt.png)
 
 
 # 🧠 Simulador de Planificación de CPU (Interfaz Web)

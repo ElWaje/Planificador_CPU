@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-brightgreen?logo=streamlit)
+![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Made with ❤️ by Enrique Solís](https://img.shields.io/badge/Made%20with-%E2%9D%A4--red)
+
 ![Presentación](header_cpu_timeline.png)
 
 (ejemplo_gantt.png)

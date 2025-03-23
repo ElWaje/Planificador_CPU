@@ -93,4 +93,4 @@ Then open http://localhost:8501 in your browser.
 
 ---
 
-Desarrollado con 💻 por [Tu Nombre]
+Desarrollado con 💻 por [Enrique Solís]

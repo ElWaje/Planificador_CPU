@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Streamlit cache
+.streamlit/
+
+# Environment variables and local configs
+.env
+*.env
+
+# PDF and result files
+*.pdf

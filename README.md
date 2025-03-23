@@ -1,16 +1,11 @@
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-brightgreen?logo=streamlit)
-![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)
-![Made with ❤️ by Enrique Solís](https://img.shields.io/badge/Made%20with-%E2%9D%A4--red)
-
-![Presentación](header_cpu_timeline.png)
-
-(ejemplo_gantt.png)
-
-
-# 🧠 Simulador de Planificación de CPU (Interfaz Web)
-
-Este proyecto es un simulador de planificación de procesos con interfaz web basado en **Streamlit**. Permite ingresar procesos con tiempo de llegada, ráfaga y prioridad, y visualizar el comportamiento de seis algoritmos de planificación de CPU.
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-brightgreen?logo=streamlit)](https://streamlit.io/)
+[![License](https://img.shields.io/github/license/ElWaje/Planificador_CPU)](https://github.com/ElWaje/Planificador_CPU/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/ElWaje/Planificador_CPU?style=social)](https://github.com/ElWaje/Planificador_CPU/stargazers)
+[![Forks](https://img.shields.io/github/forks/ElWaje/Planificador_CPU?style=social)](https://github.com/ElWaje/Planificador_CPU/network/members)
+[![Last Commit](https://img.shields.io/github/last-commit/ElWaje/Planificador_CPU)](https://github.com/ElWaje/Planificador_CPU/commits/main)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://planificadorcpu-k23fd5tvdmyxx9wcaknxd3.streamlit.app/)
+![Made by Enrique Solís](https://img.shields.io/badge/Made%20by-Enrique%20Sol%C3%ADs-orange?style=flat-square&logo=github)
 
 ## ✨ Funcionalidades
 

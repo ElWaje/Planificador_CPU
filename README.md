@@ -99,3 +99,9 @@ Then open http://localhost:8501 in your browser.
 ---
 
 Desarrollado con 💻 por [Enrique Solís]
+
+---
+
+### 🖥️ Vista previa de la interfaz
+
+![Mockup](mockup_planificador_cpu.png)

@@ -1,102 +1,92 @@
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-brightgreen?logo=streamlit)](https://streamlit.io/)
-[![License](https://img.shields.io/github/license/ElWaje/Planificador_CPU)](https://github.com/ElWaje/Planificador_CPU/blob/main/LICENSE)
-[![Stars](https://img.shields.io/github/stars/ElWaje/Planificador_CPU?style=social)](https://github.com/ElWaje/Planificador_CPU/stargazers)
-[![Forks](https://img.shields.io/github/forks/ElWaje/Planificador_CPU?style=social)](https://github.com/ElWaje/Planificador_CPU/network/members)
-[![Last Commit](https://img.shields.io/github/last-commit/ElWaje/Planificador_CPU)](https://github.com/ElWaje/Planificador_CPU/commits/main)
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://planificadorcpu-k23fd5tvdmyxx9wcaknxd3.streamlit.app/)
-![Made by Enrique Solís](https://img.shields.io/badge/Made%20by-Enrique%20Sol%C3%ADs-orange?style=flat-square&logo=github)
 
-## ✨ Funcionalidades
+# 🧠 Planificador de CPU
 
-- ✅ 6 Algoritmos disponibles:
-  - FIFO (Primero en entrar, primero en salir)
-  - SJF (El más corto primero)
-  - SRTF (Tiempo restante más corto)
-  - Prioridad (modo cooperativo y expropiativo)
-  - Round Robin (con quantum configurable)
+![Banner](banner_metricas.gif)
 
-- 📊 Visualización tipo Diagrama de Gantt
-- 📥 Cola de ejecución mostrada
-- 🧮 Cálculos paso a paso de espera y respuesta
-- 📄 Exportación de resultados a PDF
-- 🌐 Interfaz gráfica con Streamlit
-
-## 🚀 ¿Cómo empezar?
-
-### Requisitos
-
-- Python 3.8 o superior
-- pip
-
-### Instalación
-
-```bash
-pip install streamlit matplotlib pandas fpdf
-```
-
-### Ejecutar la aplicación
-
-```bash
-streamlit run app_web.py
-```
-
-Abre en el navegador la URL local (normalmente http://localhost:8501).
+Este proyecto permite simular múltiples algoritmos de planificación de CPU de forma interactiva y educativa. Incluye visualizaciones, métricas, exportación de resultados y soporte multilenguaje.
 
 ---
 
-# 🧠 CPU Scheduling Simulator (Web GUI)
+## 📦 Algoritmos Soportados
 
-This is a web-based CPU Scheduling Simulator using **Streamlit**. You can input processes with arrival time, burst time and priority, then choose among six algorithms to simulate their behavior.
+- FIFO (First-In First-Out)
+- SJF (Shortest Job First)
+- SRTF (Shortest Remaining Time First)
+- Prioridad cooperativa
+- Prioridad expropiativa
+- Round Robin
 
-## ✨ Features
+---
 
-- ✅ 6 Scheduling Algorithms:
-  - FIFO (First-In, First-Out)
-  - SJF (Shortest Job First)
-  - SRTF (Shortest Remaining Time First)
-  - Priority Scheduling (Cooperative & Preemptive)
-  - Round Robin (with configurable quantum)
+## 🧪 Fase 4: Pruebas automáticas + CI/CD
 
-- 📊 Gantt Chart Visualization
-- 📥 Execution Queue Display
-- 🧮 Step-by-step calculation of waiting and response time
-- 📄 Export results to PDF
-- 🌐 Interactive Streamlit Web GUI
+- Archivo `test_algoritmos.py` con pruebas para los 6 algoritmos
+- Uso de `pytest` para validación local
+- GitHub Actions (`.github/workflows/ci.yml`) para CI/CD
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## 📊 Fase 5: Métricas de eficiencia
 
-- Python 3.8+
-- pip
+- Cálculo de:
+  - 🔁 Cambios de contexto
+  - ⏳ Tiempo total en espera
+  - ⚙️ Uso de CPU
+- Visualización comparativa en gráficas
+- Exportación como banner animado (`banner_metricas.gif`)
 
-### Installation
+---
 
-```bash
-pip install streamlit matplotlib pandas fpdf
-```
+## 🌐 Fase 3: Internacionalización
 
-### Run the App
+- Traducción dinámica ES / EN
+- Diccionario multilenguaje (`i18n.py`)
+- Exportación en idioma seleccionado
+
+---
+
+## 🚀 Cómo ejecutar
 
 ```bash
 streamlit run app_web.py
 ```
 
-Then open http://localhost:8501 in your browser.
+Requiere:  
+- `streamlit`
+- `matplotlib`
+- `fpdf`
+- `pandas`
+- `pytest` (para pruebas)
 
 ---
 
-### 📷 Ejemplo de Diagrama de Gantt
+## 📤 Exportaciones
 
-![Ejemplo Gantt](ejemplo_gantt.png)
-
----
-
-Desarrollado con 💻 por [Enrique Solís]
+- PDF con métricas y resultados
+- Imagen del diagrama de Gantt
+- Banner animado con métricas
 
 ---
 
-### 🖥️ Vista previa de la interfaz
+## 🧠 Autor
 
-![Mockup](mockup_planificador_cpu.png)
+Enrique Solís
+
+
+
+## 📄 Presentación del proyecto
+
+- [📘 Presentación en PDF (Español)](docs/Presentacion_Proyecto_CPU_Solis_v2.pdf)
+- [📘 Project Presentation in PDF (English)](docs/CPU_Scheduler_Presentation_EN.pdf)
+
+
+### 🧠 Fase 6: Recomendación inteligente del mejor algoritmo
+
+Esta versión incluye una recomendación automática basada en reglas heurísticas.
+Según las características de los procesos, el sistema sugiere el algoritmo de planificación más adecuado.
+
+Ejemplo de salida:
+
+> Se recomienda **SRTF** porque los procesos tienen ráfagas cortas y llegadas escalonadas.
+
+Además, esta recomendación se incluye también en el PDF exportado.

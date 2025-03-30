@@ -8,12 +8,23 @@ __pycache__/
 dist/
 build/
 
-# Streamlit cache
+# Streamlit cache and config
 .streamlit/
+*.log
 
-# Environment variables and local configs
+# Local environment variables
 .env
 *.env
 
-# PDF and result files
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Output files
 *.pdf
+*.png
+*.jpg
+
+# Pytest cache
+.pytest_cache/

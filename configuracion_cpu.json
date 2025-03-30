@@ -1,0 +1,6 @@
+{
+    "idioma": "es",
+    "algoritmo": "Round Robin",
+    "numero_procesos": 5,
+    "quantum": 3
+}

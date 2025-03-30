@@ -124,5 +124,8 @@ pytest
 ## 👨‍💻 Autor
 
 Desarrollado por [ElWaje](https://github.com/ElWaje)
+
 https://planificadorcpu-gv548bekautcujxbt6i8vt.streamlit.app/
+
+
 ---

@@ -1,30 +1,35 @@
-# Byte-compiled / optimized / DLL files
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+
+# Configuraciones de Streamlit
+.streamlit/
+
+# Archivos de configuración local
+*.toml
+*.env
+
+# Compilados de Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Distribution / packaging
-*.egg-info/
-dist/
-build/
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-# Streamlit cache and config
-.streamlit/
-*.log
-
-# Local environment variables
-.env
-*.env
-
-# Virtual environments
-.venv/
-venv/
-env/
-
-# Output files
+# Archivos generados por el proyecto
 *.pdf
 *.png
-*.jpg
+*.json
 
-# Pytest cache
+# Jupyter/VSCode/IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# pytest cache
 .pytest_cache/

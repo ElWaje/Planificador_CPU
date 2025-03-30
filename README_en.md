@@ -1,91 +1,79 @@
+# CPU Scheduler
 
-# 🧠 CPU Scheduler
+This project is an interactive educational tool that simulates different CPU scheduling algorithms. It's designed to help understand how these algorithms work and compare their performance using visualizations and metrics.
 
-![Banner](banner_metricas.gif)
+## 🔧 Features
 
-This project simulates multiple CPU scheduling algorithms interactively and educationally. It includes visualizations, metrics, exportable results, and multilingual support.
+- Support for various scheduling algorithms:
+  - FIFO
+  - SJF
+  - SRTF
+  - Round Robin
+  - Cooperative and Preemptive Priority
+- Step-by-step visualization of the simulation
+- Animated particles and Gantt diagrams
+- Export of results to PDF and JSON
+- Configuration and multilingual support (ES/EN)
+- Efficiency metrics and algorithm recommendation
+- Load/save full sessions with configuration and results
 
----
+## 🚀 Installation
 
-## 📦 Supported Algorithms
+1. Clone the repository:
 
-- FIFO (First-In First-Out)
-- SJF (Shortest Job First)
-- SRTF (Shortest Remaining Time First)
-- Cooperative Priority
-- Preemptive Priority
-- Round Robin
+```bash
+git clone https://github.com/ElWaje/Planificador_CPU.git
+cd Planificador_CPU
+```
 
----
+2. Install the dependencies:
 
-## 🧪 Phase 4: Automated Testing + CI/CD
+```bash
+pip install -r requirements.txt
+```
 
-- `test_algorithms.py` with unit tests for all 6 algorithms
-- `pytest` for local validation
-- GitHub Actions (`.github/workflows/ci.yml`) for CI/CD
-
----
-
-## 📊 Phase 5: Efficiency Metrics
-
-- Metrics:
-  - 🔁 Context switches
-  - ⏳ Total waiting time
-  - ⚙️ CPU usage
-- Comparative visualization charts
-- Exportable animated banner (`banner_metricas.gif`)
-
----
-
-## 🌐 Phase 3: Internationalization
-
-- Dynamic ES / EN translation
-- Multilanguage dictionary (`i18n.py`)
-- Export results and PDF in selected language
-
----
-
-## 🚀 How to Run
+3. Launch the application:
 
 ```bash
 streamlit run app_web.py
 ```
 
-Dependencies:
-- `streamlit`
-- `matplotlib`
-- `fpdf`
-- `pandas`
-- `pytest` (for testing)
+## 🧠 Project Phases
+
+1. Basic functionality and individual algorithms
+2. Result table and averages
+3. Gantt visualization
+4. Automatic tests and CI/CD
+5. Efficiency metrics (context switches, CPU usage, etc.)
+6. Heuristic-based recommendation of the best algorithm
+7. Step-by-step simulation
+8. Explanation of scheduling decisions
+9. Save/load complete execution sessions as JSON
+
+## 📂 Files and Modules
+
+- `app_web.py`: Main file with the Streamlit app
+- `algoritmos_cpu.py`: Scheduling algorithms
+- `metricas_cpu.py`: Efficiency metric calculations
+- `recomendador.py`: Algorithm recommendation logic
+- `components/`: UI components (step-by-step simulation, particles, decisions, etc.)
+- `i18n.py`: Translations and multilingual support
+
+## 📝 Resources
+
+- [Project Presentation (ES)](./Presentacion_Proyecto_CPU_Solis_v3.pdf)
+- [Project Presentation (EN)](./Project_Presentation_CPU_Solis_v3_en.pdf)
 
 ---
 
-## 📤 Exports
+## 🎓 Educational Objective
 
-- PDF with metrics and results
-- Gantt chart as image
-- Animated metrics banner
+The application is designed as an educational tool to help students and professionals understand and compare CPU scheduling algorithms interactively.
 
----
+## 📄 License
 
-## 🧠 Author
+This project is licensed under the MIT License.
 
-Enrique Solís
+## ✨ Author
 
-
-## 📄 Project Presentation
-
-- [📘 Presentation in PDF (Spanish)](docs/Presentacion_Proyecto_CPU_Solis_v2.pdf)
-- [📘 Presentation in PDF (English)](docs/CPU_Scheduler_Presentation_EN.pdf)
-
-
-### 🧠 Phase 6: Smart scheduling algorithm recommendation
-
-This version includes an automatic recommendation based on heuristic rules.
-According to the characteristics of the processes, the system suggests the most suitable scheduling algorithm.
-
-Example output:
-
-> **SRTF** is recommended because processes have short bursts and staggered arrivals.
-
-This recommendation is also included in the exported PDF.
+Created by [@ElWaje](https://github.com/ElWaje)

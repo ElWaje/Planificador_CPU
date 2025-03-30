@@ -61,8 +61,8 @@ streamlit run app_web.py
 
 ## 📝 Resources
 
-- [Project Presentation (ES)](./Presentacion_Proyecto_CPU_Solis_v3.pdf)
-- [Project Presentation (EN)](./Project_Presentation_CPU_Solis_v3_en.pdf)
+- [Project Presentation (ES)](./docs/Presentacion_Proyecto_CPU_Solis_v3.pdf)
+- [Project Presentation (EN)](./docs/Project_Presentation_CPU_Solis_v3_en.pdf)
 
 ---
 

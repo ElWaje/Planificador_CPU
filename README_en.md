@@ -77,3 +77,4 @@ This project is licensed under the MIT License.
 ## ✨ Author
 
 Created by [@ElWaje](https://github.com/ElWaje)
+https://planificadorcpu-gv548bekautcujxbt6i8vt.streamlit.app/
